@@ -1,0 +1,30 @@
+{
+  "name": "quran-library-app",
+  "version": "2.0.0",
+  "description": "تطبيق موبايل المكتبة القرآنية الشاملة برواية ورش عن نافع",
+  "author": "Quran Library Team",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "npx cap serve",
+    "build": "echo \"Web app is ready\"",
+    "sync": "npx cap sync",
+    "android": "npx cap open android",
+    "ios": "npx cap open ios",
+    "android:build": "cd android && ./gradlew assembleDebug",
+    "ios:build": "cd ios && xcodebuild -workspace QuranLibrary.xcworkspace -scheme QuranLibrary -configuration Debug",
+    "dev": "npx cap serve --host=0.0.0.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/storage": "^7.0.0",
+    "@capacitor/splash-screen": "^7.0.0",
+    "@capacitor/status-bar": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "typescript": "^5.0.0"
+  }
+}
